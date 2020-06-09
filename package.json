@@ -1,0 +1,70 @@
+{
+	"name": "wxqq-miniprogram-helper",
+	"displayName": "wxqq-miniprogram-helper",
+	"description": "提供创建wx/qq小程序页面/组件文件的快捷键",
+	"publisher": "qYm",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.45.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onCommand:wxqq-miniprogram-helper.createWXPage",
+		"onCommand:wxqq-miniprogram-helper.createWXComponent",
+		"onCommand:wxqq-miniprogram-helper.createQQPage",
+		"onCommand:wxqq-miniprogram-helper.createQQComponent"
+	],
+	"main": "./src/extension.js",
+	"contributes": {
+		"commands": [{
+			"command": "wxqq-miniprogram-helper.createWXPage",
+			"title": "新建微信小程序Page"
+		}, {
+			"command": "wxqq-miniprogram-helper.createWXComponent",
+			"title": "新建微信小程序Component"
+		}, {
+			"command": "wxqq-miniprogram-helper.createQQPage",
+			"title": "新建QQ小程序Page"
+		}, {
+			"command": "wxqq-miniprogram-helper.createQQComponent",
+			"title": "新建QQ小程序Component"
+		}],
+		"menus": {
+			"explorer/context": [{
+				"command": "wxqq-miniprogram-helper.createWXPage",
+				"title": "新建微信小程序Page",
+				"group": "navigation"
+			}, {
+				"command": "wxqq-miniprogram-helper.createWXComponent",
+				"title": "新建微信小程序组件",
+				"group": "navigation"
+			}, {
+				"command": "wxqq-miniprogram-helper.createQQPage",
+				"title": "新建QQ小程序Page",
+				"group": "navigation"
+			}, {
+				"command": "wxqq-miniprogram-helper.createQQComponent",
+				"title": "新建QQ小程序组件",
+				"group": "navigation"
+			}]
+		}
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.45.0",
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.2",
+		"@types/node": "^13.11.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.1.2",
+		"typescript": "^3.8.3",
+		"vscode-test": "^1.3.0"
+	}
+}
