@@ -1,7 +1,7 @@
 # wxqq-miniprogram-helper README
 
 提供快捷键创建微信/QQ小程序文件
-
+GitHub :[https://github.com/JingRen790838213/wxqq-miniprogram-helper](https://github.com/JingRen790838213/wxqq-miniprogram-helper)
 
 ### 1.0.0
 用法
